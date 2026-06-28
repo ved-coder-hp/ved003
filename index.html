@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Compressor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📄 PDF Compressor</h1>
+    <p>Compress your PDF files quickly and securely.</p>
+</header>
+
+<div class="container">
+    <div class="upload-box" id="dropArea">
+        <p>Drag & Drop PDF Here</p>
+        <p>or</p>
+        <input type="file" id="pdfFile" accept=".pdf" hidden>
+        <button id="browseBtn">Browse PDF</button>
+    </div>
+
+    <div class="controls">
+        <label>Compression Level</label>
+        <select id="level">
+            <option value="low">Low Compression</option>
+            <option value="medium" selected>Medium Compression</option>
+            <option value="high">High Compression</option>
+        </select>
+
+        <button id="compressBtn">Compress PDF</button>
+    </div>
+
+    <div class="progress">
+        <div id="progressBar"></div>
+    </div>
+
+    <div class="result">
+        <p id="status">No file selected.</p>
+        <a id="downloadBtn" href="#" download hidden>Download Compressed PDF</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
